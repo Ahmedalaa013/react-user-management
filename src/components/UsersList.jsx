@@ -42,7 +42,7 @@ const UsersList = (props) => {
   });
 
   return (
-    <table className="table table-hover">
+    <table className="table table-hover rounded">
       <thead>
         <tr>
           <th scope="col">#</th>

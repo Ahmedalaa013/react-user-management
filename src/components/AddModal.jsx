@@ -50,6 +50,7 @@ const AddModal = (props) => {
                   className="form-control"
                   id="validationCustom01"
                   required
+                  placeholder="Enter First Name"
                   onChange={(event) => {
                     setfirstName(event.target.value);
                   }}
@@ -68,6 +69,7 @@ const AddModal = (props) => {
                   className="form-control"
                   id="validationCustom02"
                   required
+                  placeholder="Enter Last Name"
                   onChange={(event) => {
                     setlastName(event.target.value);
                   }}
@@ -86,6 +88,7 @@ const AddModal = (props) => {
                   className="form-control"
                   id="validationCustom03"
                   required
+                  placeholder="Enter Email"
                   onChange={(event) => {
                     setemail(event.target.value);
                   }}
@@ -127,7 +130,7 @@ const AddModal = (props) => {
   );
 };
 const mapStateToProps = (state) => {
-  return { createdUserdata: state.createdUser, userDeleted: state.deletedUser };
+  return { createdUserdata: state.createdUser };
 };
 export default connect(mapStateToProps, {
   createUser,

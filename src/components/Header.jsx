@@ -1,6 +1,8 @@
-const Header = () => {
+import Navbar from "./Navbar";
+const Header = (props) => {
   return (
     <div className="row my-2">
+      <Navbar close={props.close} />
       <div className="col-10">
         <h2>User Management</h2>
       </div>

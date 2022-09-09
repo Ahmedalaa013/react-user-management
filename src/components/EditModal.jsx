@@ -49,6 +49,7 @@ const EditModal = (props) => {
                   className="form-control"
                   id="validationCustom01"
                   required
+                  placeholder="Enter First Name"
                   onChange={(event) => {
                     setfirstName(event.target.value);
                   }}
@@ -67,6 +68,7 @@ const EditModal = (props) => {
                   className="form-control"
                   id="validationCustom02"
                   required
+                  placeholder="Enter Last Name"
                   onChange={(event) => {
                     setlastName(event.target.value);
                   }}
